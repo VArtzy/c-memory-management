@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    printf("Stack program");
+    int a = 1;
+    printf("Stack program %zu", &a);
     return 0;
 }
