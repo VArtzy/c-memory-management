@@ -49,6 +49,8 @@ Implement a simple reference counting garbage collector from scratch in C
 Mark and Sweep GC
 Implement a basic mark and sweep garbage collector and understand its tradeoffs with refcounting
 
+## Intention
+
 This is my exercise and me having fun with segfault :)
 
 Material to Learn Memory Management in C from [boot.dev](https://boot.dev), thanks [teej](https://github.com/tjdevries) for awesome material resource and [course explaination video](https://www.youtube.com/watch?v=rJrd2QMVbGM&t=11406s&pp=ygUIYm9vdC5kZXY%3D)
