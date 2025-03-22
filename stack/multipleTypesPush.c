@@ -8,19 +8,22 @@
 void stack_push_multiple_types(stack_t *s) {
     float *phi = malloc(sizeof(float));
     *phi = 3.14;
-    stack_push(s, phi);
+    stack_push(s, phi); // push a float value
 
     char *text = "Sneklang is blazingly slow!";
     char *str = malloc(sizeof(char) * strlen(text));
     str = text;
-    stack_push(s, str);
+    stack_push(s, str); // push a char* (string)
+    // This stack even accept different datatypes between element, with great power comes great responsiblity
+    // in statically typed languages, it's often better to enforce type homogeneity ensure type safety and clarity.
 }
 
 void scary_double_push(stack_t *s) {
-    stack_push(s, (void *)1337);
+    stack_push(s, (void *)1337); // push an int value cast to void *
     int *mem = malloc(sizeof(int));
     *mem = 1024;
-    stack_push(s, mem);
+    stack_push(s, mem); // push a pointer to a value
+    // This dangerious because we let every datatype pushed onto the stack, make it heterogeneous (usually bad idea)
 }
 
 void stack_free(stack_t *stack) {
